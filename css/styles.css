@@ -11828,11 +11828,10 @@ margin-bottom:2rem;
 margin-top: 2rem;
 }
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-img.png") center center;
-  background-size:cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sfondojtaz.png");
   width: 100%;
   height: 50vh; 
-  background: url("../img/hero-img.png") top center;
+  background: url("../img/sfondojtaz.png");
   background-size: cover;
   position: relative;
 }
@@ -11845,8 +11844,6 @@ margin-top: 2rem;
   left: 0;
   right: 0;
 }
-
-
 .stats-counter:before container {
 position: relative;
 padding-top: 74px;
