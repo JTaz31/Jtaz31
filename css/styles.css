@@ -11554,6 +11554,10 @@ body {
     border-bottom: 0.25rem solid #e82e40;
   }
 }
+.navbar a:hover, .navbar .active, .navbar li:hover > a {
+  background: rgba(247,179,43,0.5);
+  border-radius: 10%;
+}
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
@@ -11640,6 +11644,9 @@ margin-top: 0.3rem;
 #about p {
  color: black;
 }
+#presentazione .featured-text p {
+  color:black;
+ }
 
 #projects{
   background-color: black;
@@ -11784,31 +11791,6 @@ margin-top: 0.3rem;
   line-height: 0;
 }
 
-.team .member .member-info {
-  padding: 25px 15px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #e82e40;
-}
-
-.team .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
 .team .member:hover .social {
   opacity: 1;
   bottom: 15px;
@@ -11817,7 +11799,9 @@ margin-top: 0.3rem;
 #team .featured-text h4{
 margin-bottom:2rem;
 margin-top: 2rem;
+color:#141414;
 }
+
 #team {
   background-color:#E82E40 ;
 }
