@@ -889,11 +889,6 @@ progress {
   --bs-gutter-x: 1.5rem;
 }
 
-.g-4,
-.gy-4 {
-  --bs-gutter-y: 1.5rem;
-}
-
 .g-5,
 .gx-5 {
   --bs-gutter-x: 3rem;
@@ -11828,10 +11823,10 @@ margin-bottom:2rem;
 margin-top: 2rem;
 }
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sfondojtazdue.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/sfondoconpubblicita.png")center center;
   width: 100%;
   height: 50vh; 
-  background: url("../img/sfondojtazdue.png");
+  background: url("../img/sfondoconpubblicita.png")top center;
   background-size: cover;
   position: relative;
 }
@@ -11845,7 +11840,19 @@ margin-top: 2rem;
   right: 0;
 }
 .stats-counter:before container {
-position: relative;
-padding-top: 74px;
-text-align: center;
-}
+  position: relative;
+  padding-top: 74px;
+  text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .stats-counter  {
+      background-attachment: fixed;
+    }
+  }
+  @media (max-width: 768px) {
+    .stats-counter  {
+      height: auto;
+    }
+  
+  }
