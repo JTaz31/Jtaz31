@@ -11639,7 +11639,7 @@ margin-bottom: 2rem;
 
 #about {
   padding: 10rem 0;
-  background-color: #f7be2b;
+  background-color: #f7b32b;
 }
 #about .featured-text {
  margin-bottom: 4rem;
@@ -11906,6 +11906,38 @@ color:#141414;
         }
       
       }
+      .stats-counter4 {
+        background-image: linear-gradient( #E82E40 25%, #141414 50%);
+        width: 100%;
+        height: 50vh; 
+        
+      }
+      .stats-counter4:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      .stats-counter4:before container {
+        position: relative;
+        padding-top: 74px;
+        text-align: center;
+        }
+      
+        
+        @media (min-width: 1024px) {
+          .stats-counter4  {
+            background-attachment: fixed;
+          }
+        }
+        @media (max-width: 768px) {
+          .stats-counter4  {
+            height: auto;
+          }
+        
+        }
 /*--------------------------------------------------------------
 # Merchandise.html
 --------------------------------------------------------------*/
