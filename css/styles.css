@@ -17,6 +17,11 @@
   src: url(FontsFree-Net-Druk-Wide-Bold.eot);
   src: url('FontsFree-Net-Druk-Wide-Bold.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'silkafont';
+  src: url(._silkamono-regular-webfont.eot);
+  src: url('._silkamono-regular-webfont.ttf') format('truetype');
+}
 
 
 :root {
@@ -11570,7 +11575,7 @@ body {
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: "wide";
+  font-family: 'silkafont';
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -11668,6 +11673,7 @@ margin-top: 0.3rem;
 #projects .project-text {
   padding: 3rem;
   font-size: 90%;
+  
 }
 @media (min-width: 992px) {
   #projects.project-text {
