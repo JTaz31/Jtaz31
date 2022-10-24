@@ -11767,7 +11767,7 @@ margin-top: 0.3rem;
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: #141414;
   padding: 60px 0;
 }
 
@@ -11775,7 +11775,7 @@ margin-top: 0.3rem;
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 5px;
-  background: #fff;
+  background: #141414;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -11843,6 +11843,7 @@ color:#141414;
 .stats-counter:before {
   content: "";
   position: absolute;
+  
   bottom: 0;
   top: 0;
   left: 0;
