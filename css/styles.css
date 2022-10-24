@@ -11604,7 +11604,7 @@ body {
   height: auto;
   
   padding: 15rem 0;
-  background-color: #E82E40;
+  background-color: #141414;
   
   background-position: center;
   background-repeat: no-repeat;
@@ -11617,7 +11617,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background-color: #E82E40;
+  background-color: #141414;
   
   background-position: center;
   background-repeat: no-repeat;
@@ -11659,11 +11659,12 @@ body {
 }
 
 #about h4{
+  color:white;
 margin-bottom: 2rem;
 }
 .about-section {
   padding-top: 10rem;
-  background: #7f7f7f;
+  background: #141414;
 }
 #about p {
   margin-bottom: 5rem;
@@ -11671,14 +11672,14 @@ margin-bottom: 2rem;
 
 #about {
   padding: 10rem 0;
-  background-color: #f7b32b;
+  background-color:#141414;
 }
 #about .featured-text {
  margin-bottom: 4rem;
 margin-top: 0.3rem;
 }
 #about p {
- color: black;
+ color: white;
 }
 
 
@@ -11767,7 +11768,7 @@ margin-top: 0.3rem;
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: #141414;
   padding: 60px 0;
 }
 
@@ -11775,7 +11776,7 @@ margin-top: 0.3rem;
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 5px;
-  background: #fff;
+  background: #141414;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -11827,15 +11828,15 @@ margin-top: 0.3rem;
 #team .featured-text h4{
 margin-bottom:2rem;
 margin-top: 2rem;
-color:#141414;
+color:#ffffff;
 }
 
 #team {
-  background-color:#E82E40 ;
+  background-color:#141414 ;
 }
 
 .stats-counter {
-  background-image: linear-gradient( #F7B32B 25%, #E82E40 50%);
+  background-image: linear-gradient( #141414 25%, #f7b32f 25%, #141414 50%);
   width: 100%;
   height: 50vh; 
   
@@ -11868,7 +11869,7 @@ color:#141414;
   }
 
   .stats-counter2 {
-    background-image: linear-gradient( #E82E40 25%, #F7B32B 50%);
+    background-image: linear-gradient( #141414 25%, #E82E40 25%, #141414  50%);
     width: 100%;
     height: 50vh; 
     
@@ -11984,4 +11985,184 @@ color:#141414;
   
   font-size: 25px;
   font-weight: bold;
+}
+
+.youtube-color {
+  color:#E82E40;
+  border-color: #141414;
+}
+
+.facebook-color{
+color:#3b5998;
+border-color: #141414;
+}
+
+.twitter-color{
+color: #00acee;
+border-color: #141414;}
+
+.reddit-bgcolor{
+ color: #FF5700;
+ border-color: #141414;
+
+}
+.discord-bgcolor{
+color:#7289da;
+border-color:#141414;
+}
+.tiktok-bgcolor{
+color: #ffffff;
+border-color: #141414;
+}
+.instagram-color{
+background:linear-gradient(#e66465, #9198e5);
+border-color: #141414;
+}
+
+.freccia-color{
+color:#f7b32f;
+}
+.bottoni-bgcolor{
+  background-color:#7f7f7f;
+  }
+  
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+}
+
+#preloader:before,
+#preloader:after {
+  content: "";
+  background-color:#141414;
+  position: absolute;
+  inset: 0;
+  width: 50%;
+  height: 100%;
+  transition: all 0.3s ease 0s;
+  z-index: -1;
+}
+
+#preloader:after {
+  left: auto;
+  right: 0;
+}
+
+#preloader .line {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  width: 3px;
+  height: 280px;
+  transition: all 0.8s ease 0s;
+}
+
+#preloader .line:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 50%;
+  width: 3px;
+  height: 0%;
+  transform: translateY(-50%);
+  -webkit-animation: lineincrease 1000ms ease-in-out 0s forwards;
+  animation: lineincrease 1000ms ease-in-out 0s forwards;
+}
+
+#preloader .line:after {
+  content: "";
+  position: absolute;
+  background-color: #999;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  transform: translateY(-100%);
+  -webkit-animation: linemove 1200ms linear 0s infinite;
+  animation: linemove 1200ms linear 0s infinite;
+  -webkit-animation-delay: 2000ms;
+  animation-delay: 2000ms;
+}
+
+#preloader.loaded .line {
+  opacity: 0;
+  height: 100% !important;
+}
+
+#preloader.loaded .line:after {
+  opacity: 0;
+}
+
+#preloader.loaded:before,
+#preloader.loaded:after {
+  -webkit-animation: preloaderfinish 300ms ease-in-out 500ms forwards;
+  animation: preloaderfinish 300ms ease-in-out 500ms forwards;
+}
+
+@-webkit-keyframes lineincrease {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes lineincrease {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes linemove {
+  0% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes linemove {
+  0% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes preloaderfinish {
+  0% {
+    width: 5 0%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes preloaderfinish {
+  0% {
+    width: 5 0%;
+  }
+
+  100% {
+    width: 0%;
+  }
 }
