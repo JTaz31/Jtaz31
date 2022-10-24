@@ -11831,7 +11831,7 @@ color:#141414;
 }
 
 #team {
-  background-color:#E82E40 ;
+  background-color:#141414 ;
 }
 
 .stats-counter {
@@ -11843,7 +11843,6 @@ color:#141414;
 .stats-counter:before {
   content: "";
   position: absolute;
-  
   bottom: 0;
   top: 0;
   left: 0;
@@ -11869,7 +11868,7 @@ color:#141414;
   }
 
   .stats-counter2 {
-    background-image: linear-gradient( #E82E40 25%, #F7B32B 50%);
+    background-image: linear-gradient( #141414 25%, #ffffff 50%);
     width: 100%;
     height: 50vh; 
     
