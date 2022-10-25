@@ -7041,7 +7041,7 @@ color:black;
 }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid #f7b32f !important;
 }
 
 .border-top-0 {
@@ -7049,15 +7049,15 @@ color:black;
 }
 
 .border-end {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid #f7b32f !important;
 }
 
 .border-end-0 {
-  border-right: 0 !important;
+border-right: 0 !important;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+border-bottom: 1px solid #f7b32f !important;
 }
 
 .border-bottom-0 {
@@ -7065,7 +7065,7 @@ color:black;
 }
 
 .border-start {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 1px solid #f7b32f !important;
 }
 
 .border-start-0 {
@@ -11572,7 +11572,6 @@ body {
   }
 }
 
-
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
@@ -11682,7 +11681,6 @@ margin-top: 0.3rem;
  color: white;
 }
 
-
 @media (min-width: 992px) {
   #about .featured-text {
     padding: 0 0 0 2rem;
@@ -11783,6 +11781,7 @@ margin-top: 0.3rem;
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+  border-radius: 40px;
 }
 
 .team .member .social {
@@ -11855,7 +11854,6 @@ color:#ffffff;
   text-align: center;
   }
 
-  
   @media (min-width: 1024px) {
     .stats-counter  {
       background-attachment: fixed;
@@ -11888,7 +11886,6 @@ color:#ffffff;
     text-align: center;
     }
   
-    
     @media (min-width: 1024px) {
       .stats-counter2  {
         background-attachment: fixed;
@@ -11977,8 +11974,6 @@ color:#ffffff;
   padding: 2rem;
   font-size: 95%;
   font:"wide";
-
-  
 }
 
 .project-text:nth-child(2)::first-letter{
@@ -12004,16 +11999,18 @@ border-color: #141414;}
 .reddit-bgcolor{
  color: #FF5700;
  border-color: #141414;
-
 }
+
 .discord-bgcolor{
 color:#7289da;
 border-color:#141414;
 }
+
 .tiktok-bgcolor{
 color: #ffffff;
 border-color: #141414;
 }
+
 .instagram-color{
 background:linear-gradient(#e66465, #9198e5);
 border-color: #141414;
@@ -12022,8 +12019,9 @@ border-color: #141414;
 .freccia-color{
 color:#f7b32f;
 }
-.bottoni-bgcolor{
-  background-color:#7f7f7f;
+
+.bottoni-border{
+  border-color:#f7b32f;
   }
   
 /*--------------------------------------------------------------
@@ -12165,4 +12163,14 @@ color:#f7b32f;
   100% {
     width: 0%;
   }
+}
+
+form{
+  display:flex;
+  flex-direction:column; 
+  width:200px;
+  padding:40px;
+}
+input{
+  margin-top:15px ;
 }
