@@ -13089,7 +13089,7 @@ input{
 }
 
 .services .service-item:hover:before {
-  background: #7f7f7f;
+  background: #E82E40;
   right: 0;
   top: 0;
   width: 100%;
