@@ -11635,6 +11635,19 @@ body {
   font-size: 2rem;
   color:#ffffff;  
 }
+
+.mastheadm h1, .mastheadm .h1 {
+  font-family: "Varela Round";
+  color: #141414;
+  font-size: 0.1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+.mastheadm h2, .mastheadm .h2 {
+  max-width: 20rem;
+  font-size: 2rem;
+  color:#141414;  
+}
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
     font-size: 4rem;
@@ -11652,6 +11665,28 @@ body {
     letter-spacing: 0.8rem;
   }
   .masthead h2, .masthead .h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .mastheadm h1, .mastheadm .h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .mastheadm {
+    height: 100vh;
+    padding: 0;
+  }
+  .mastheadm h1, .mastheadm .h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .mastheadm h2, .mastheadm .h2 {
     max-width: 30rem;
     font-size: 1.25rem;
   }
