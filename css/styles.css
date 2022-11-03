@@ -8050,8 +8050,8 @@ border-bottom: 1px solid #f7b32f !important;
 }
 
 .bg-black {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+  
+  background-color: #141414;
 }
 
 .bg-white {
@@ -11945,7 +11945,7 @@ color:#ffffff;
       }
     }
     .stats-counter3 {
-      background-image: linear-gradient( #141414 25%, #E82E40 50%);
+      background-image: linear-gradient( #141414 25%, #E82E40 25%, #141414  50%);
       width: 100%;
       height: 50vh; 
       
@@ -13153,13 +13153,14 @@ input{
 --------------------------------------------------------------*/
 .testimonials {
   margin-top: 80px;
+  background-color: #141414;
 }
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px;
   margin: 40px 30px;
-  background: blue;
+  background: #e82e40;
   min-height: 320px;
   display: flex;
   flex-direction: column;
@@ -13179,21 +13180,8 @@ input{
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50%;
-  border: 5px solid #474a4d;
+  border: 5px solid #141414;
   margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #fff;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
-  margin: 0;
 }
 
 .testimonials .testimonial-item p {
@@ -13209,12 +13197,12 @@ input{
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255);
+  background-color: #ffffff;
   
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: black;
 }
 
 .testimonials .swiper-slide {
