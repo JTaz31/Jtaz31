@@ -11589,19 +11589,13 @@ body {
   margin-left:2rem;
   margin-right:2rem;
 }
-.mastheadm .btn{
-  background-color: #f7b32b;
-  color: #ffffff;
-  font-size: 1rem;
-  margin-top: 1rem;
-  margin-left:2rem;
-  margin-right:2rem;
+.mastheadm #logoscritta{
+  margin-top:90px;
 }
 .mastheadm {
   position: relative;
   width: 100%;
   height: auto;
-  
   padding: 15rem 0;
   background-color: #141414;
   
@@ -13080,6 +13074,9 @@ input{
   /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.services{
+background-color: #141414;
+}
 .services .service-item {
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
@@ -13147,7 +13144,12 @@ input{
   background: #fff;
   color: #7f7f7f;
 }
-
+.services #pampling{
+  
+  border-radius: 50%;
+  border: 5px solid #141414;
+  
+}
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
