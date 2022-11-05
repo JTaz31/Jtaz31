@@ -11573,7 +11573,7 @@ body {
 }
 
 .btn {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  
   padding: 1.25rem 2rem;
   font-family: 'silkafont';
   font-size: 80%;
@@ -12065,7 +12065,9 @@ color:#f7b32f;
 .bottoni-border{
   border-color:#f7b32f;
   }
-  
+#bottoni{
+  background-color: #141414;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -13154,7 +13156,7 @@ background-color: #141414;
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
-  margin-top: 80px;
+ 
   background-color: #141414;
 }
 
