@@ -13082,7 +13082,7 @@ background-color: #141414;
 .services .service-item {
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
-  background: #7f7f7f;
+  background: black;
   height: 100%;
   overflow: hidden;
   z-index: 1;
@@ -13092,14 +13092,14 @@ background-color: #141414;
 .services .service-item:before {
   content: "";
   position: absolute;
-  background: #1d1f20;
+  background: var(--color-secondary);
   top: -200px;
   transition: all 0.3s;
   z-index: -1;
 }
 
 .services .service-item i {
-  background: #ffffff;
+  background: var(--color-secondary);
   color: #fff;
   font-size: 24px;
   transition: 0.3s;
@@ -13144,9 +13144,14 @@ background-color: #141414;
 
 .services .service-item:hover i {
   background: #fff;
-  color: #7f7f7f;
+  color: var(--color-secondary);
 }
-.services #pampling{
+
+.borderad {
+  border-radius: 50%;
+
+}
+.ok {
   
   border-radius: 50%;
   border: 5px solid #141414;
@@ -13402,4 +13407,55 @@ background-color: #141414;
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
+}
+
+
+
+
+#scroll-container {
+  border: 3px solid #7f7f7f;
+  background-color: #141414;
+  overflow: hidden;
+  padding-top:40px;
+}
+
+#scroll-text {
+  text-align: right;
+  color: #ffffff;
+
+
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
 }
