@@ -3445,6 +3445,15 @@ textarea.form-control-lg {
   color: #e4c662;
   border-color: #e4c662;
 }
+.btn-outline-warning2 {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-outline-warning2:hover {
+  color: #000;
+  background-color:  #ffffff;
+  border-color:  #ffffff;
+}
 .btn-outline-warning:hover {
   color: #000;
   background-color: #e4c662;
@@ -8575,7 +8584,9 @@ border-bottom: 1px solid #f7b32f !important;
   .me-sm-5 {
     margin-right: 3rem !important;
   }
-
+  .me-sm-6{
+    margin-right: 4.5rem !important;
+  }
   .me-sm-auto {
     margin-right: auto !important;
   }
@@ -8631,7 +8642,16 @@ border-bottom: 1px solid #f7b32f !important;
   .ms-sm-5 {
     margin-left: 3rem !important;
   }
-
+  
+  .ms-sm-8{
+    margin-left: 20rem !important;
+  }
+  .ms-sm-6 {
+    margin-left: 25rem !important;
+  }
+  .ms-sm-7 {
+    margin-left: 8rem !important;
+  }
   .ms-sm-auto {
     margin-left: auto !important;
   }
@@ -9226,7 +9246,9 @@ border-bottom: 1px solid #f7b32f !important;
   .me-md-5 {
     margin-right: 3rem !important;
   }
-
+  .me-md-5 {
+    margin-right: 3rem !important;
+  }
   .me-md-auto {
     margin-right: auto !important;
   }
@@ -11576,7 +11598,7 @@ body {
   
   padding: 1.25rem 2rem;
   font-family: 'silkafont';
-  font-size: 80%;
+  font-size:80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
@@ -11589,6 +11611,7 @@ body {
   margin-left:2rem;
   margin-right:2rem;
 }
+
 .mastheadm #logoscritta{
   margin-top:90px;
 }
@@ -12068,6 +12091,7 @@ color:#f7b32f;
 #bottoni{
   background-color: #141414;
 }
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -13082,7 +13106,7 @@ background-color: #141414;
 .services .service-item {
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
-  background: #7f7f7f;
+  background: black;
   height: 100%;
   overflow: hidden;
   z-index: 1;
@@ -13092,14 +13116,14 @@ background-color: #141414;
 .services .service-item:before {
   content: "";
   position: absolute;
-  background: #1d1f20;
+  background: var(--color-secondary);
   top: -200px;
   transition: all 0.3s;
   z-index: -1;
 }
 
 .services .service-item i {
-  background: #ffffff;
+  background: var(--color-secondary);
   color: #fff;
   font-size: 24px;
   transition: 0.3s;
@@ -13144,12 +13168,17 @@ background-color: #141414;
 
 .services .service-item:hover i {
   background: #fff;
-  color: #7f7f7f;
+  color: var(--color-secondary);
 }
-.services #pampling{
+
+.borderad {
+  border-radius: 50%;
+
+}
+.ok {
   
   border-radius: 50%;
-  border: 5px solid #141414;
+  border: 5px solid black;
   
 }
 /*--------------------------------------------------------------
@@ -13402,4 +13431,89 @@ background-color: #141414;
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
+}
+
+
+
+
+#scroll-container {
+  border: 3px solid #7f7f7f;
+  background-color: #141414;
+  overflow: hidden;
+  padding-top:40px;
+}
+
+#scroll-text {
+  text-align: right;
+  color: #ffffff;
+
+
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+/*--------------------------------------------------------------
+# Scroll top button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background: yellow;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background: yellow;
+  color: #fff;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
 }
