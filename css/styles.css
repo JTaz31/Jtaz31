@@ -13494,7 +13494,7 @@ background-color: #141414;
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background: yellow;
+  background: transparent;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -13508,7 +13508,7 @@ background-color: #141414;
 }
 
 .scroll-top:hover {
-  background: yellow;
+  background: transparent;
   color: #fff;
 }
 
