@@ -13178,7 +13178,7 @@ background-color: #141414;
 .ok {
   
   border-radius: 50%;
-  border: 5px solid #141414;
+  border: 5px solid black;
   
 }
 /*--------------------------------------------------------------
@@ -13482,4 +13482,38 @@ background-color: #141414;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
+}
+
+/*--------------------------------------------------------------
+# Scroll top button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background: yellow;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background: yellow;
+  color: #fff;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
 }
