@@ -3043,8 +3043,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #e82e40;
-  border-color: #e82e40;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 .btn-primary:hover {
   color: #fff;
@@ -13286,17 +13286,15 @@ background-color: #141414;
 /*--------------------------------------------------------------
 # Gallery Single Section
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Pricing Section
---------------------------------------------------------------*/
+
 .gallery {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .gallery .gallery-item {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .gallery .gallery-item img {
@@ -13308,13 +13306,13 @@ background-color: #141414;
   inset: 0;
   opacity: 0;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 3;
 }
 
 .gallery .gallery-links .preview-link,
 .gallery .gallery-links .details-link {
-  font-size: 20px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
   line-height: 1.2;
