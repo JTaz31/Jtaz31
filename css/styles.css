@@ -15,13 +15,9 @@
  @font-face {
   font-family: 'wide';
   src: url(FontsFree-Net-Druk-Wide-Bold.eot);
-  src: url('FontsFree-Net-Druk-Wide-Bold.ttf') format('truetype');
+  src: url('Druk Wide Bold.ttf') format('truetype');
 }
-@font-face {
-  font-family: 'silkafont';
-  src: url(._silkamono-regular-webfont.eot);
-  src: url('._silkamono-regular-webfont.ttf') format('truetype');
-}
+
 
 
 :root {
@@ -11672,7 +11668,7 @@ body {
   background-size: cover;
 }
 .masthead h1, .masthead .h1 {
-  font-family: "Varela Round";
+  font-family: "silkafont";
   color: #141414;
   font-size: 0.1rem;
   line-height: 1.5rem;
@@ -13609,4 +13605,18 @@ background-color: #141414;
   visibility: visible;
   opacity: 1;
   bottom: 15px;
+}
+
+
+.transition-image{
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  opacity:0;
+  transition:opacity 0.5s ease
+  ;
+}
+
+.transition-image:hover{
+opacity:1;
 }
