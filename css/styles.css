@@ -7071,7 +7071,12 @@ color:black;
 }
 
 .border-top {
-  border-top: 1px solid !important;
+  border-top: 1px solid #ffffff!important;
+}
+
+.bor{
+ border: 1px solid #ffffff !important;
+ color: #ffffff; 
 }
 
 .border-top-0 {
@@ -11625,14 +11630,19 @@ body {
   border: 0;
 }
 .masthead .btn{
-  background-color: #f7b32b;
+  background-color: #141414;
+  border-color:  #ffffff;
   color: #ffffff;
   font-size: 1rem;
   margin-top: 1rem;
-  margin-left:2rem;
-  margin-right:2rem;
+  margin-left:5rem;
+  margin-right:3rem;
 }
 
+.masthead .btn:hover {
+  background-color:  #ffffff;
+  border-color:  #ffffff;
+}
 .mastheadm #logoscritta{
   margin-top:90px;
 }
@@ -11670,7 +11680,7 @@ body {
 }
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
-  font-size: 2rem;
+  font-size: 1rem;
   color:#ffffff;  
 }
 
