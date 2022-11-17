@@ -594,23 +594,8 @@ progress {
   text-transform: uppercase;
 }
 
-.blockquote {
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-}
-.blockquote > :last-child {
-  margin-bottom: 0;
-}
 
-.blockquote-footer {
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-  font-size: 0.875em;
-  color:#7f7f7f;
-}
-.blockquote-footer::before {
-  content: "— ";
-}
+
 
 .img-fluid {
   max-width: 100%;
@@ -3441,10 +3426,12 @@ textarea.form-control-lg {
   color: #ffffff;
   border-color: #ffffff;
 }
+
 .btn-outline-warning2 {
   color: #ffffff;
   border-color: #ffffff;
 }
+
 .btn-outline-warning2:hover {
   color: #000;
   background-color:  #ffffff;
@@ -6749,6 +6736,9 @@ color:black;
   left: 0;
   z-index: 1030;
 }
+.fixed-bottom::after{
+color: blue;
+}
 
 .sticky-top {
   position: -webkit-sticky;
@@ -7613,6 +7603,9 @@ border-bottom: 1px solid  !important;
 .mb-5 {
   margin-bottom: 3rem !important;
 }
+.mb-6 {
+  margin-bottom: 12rem !important;
+}
 
 .mb-auto {
   margin-bottom: auto !important;
@@ -7800,6 +7793,9 @@ border-bottom: 1px solid  !important;
 
 .pb-5 {
   padding-bottom: 3rem !important;
+}
+.pb-6 {
+  padding-bottom: 6rem !important;
 }
 
 .ps-0 {
@@ -11825,10 +11821,8 @@ margin-top: 0.3rem;
   color: #141414;
   width: 3rem;
 }
-.contact-section .social {
-  margin-top: 5rem;
-}
-.contact-section .social a {
+
+.socials a {
   text-align: center;
   height: 4rem;
   width: 4rem;
@@ -11836,11 +11830,14 @@ margin-top: 0.3rem;
   border-radius: 100%;
   line-height: 4.5rem;
   color: rgba(255, 255, 255, 0.3);
+ 
+  
+
 }
-.contact-section .social a:hover {
+.socials a:hover {
   color: #ffffff;
 }
-.contact-section .social a:active {
+.socials a:active {
   color: #fff;
 }
 .envelope-color{
@@ -11849,11 +11846,10 @@ color:#7f7f7f;
 
 .footer {
   padding: 5rem 0;
+
 }
 
-#projects {
-  background-color: grey;
-}
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -12086,7 +12082,9 @@ border-color: #141414;
 
 .twitter-color{
 color: #00acee;
-border-color: #141414;}
+border-color: #141414;
+
+}
 
 .reddit-bgcolor{
  color: #FF5700;
@@ -13223,6 +13221,8 @@ background-color: #141414;
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
+  border-radius:3%;
+  height:25rem;
 }
 
 .testimonials .testimonial-item .stars {
