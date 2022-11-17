@@ -6735,6 +6735,7 @@ color:black;
   bottom: 0;
   left: 0;
   z-index: 1030;
+  padding-bottom:1.5rem;
 }
 .fixed-bottom::after{
 color: blue;
