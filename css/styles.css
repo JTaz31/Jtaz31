@@ -11825,11 +11825,11 @@ margin-top: 0.3rem;
 
 .socials a {
   text-align: center;
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  line-height: 4.5rem;
+  border-radius: 30%;
+  line-height: 4rem;
   color: rgba(255, 255, 255, 0.3);
  
   
